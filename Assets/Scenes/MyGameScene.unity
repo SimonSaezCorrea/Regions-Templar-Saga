@@ -573,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.334
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1009,7 +1009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1049431328}
-  - component: {fileID: 1049431329}
+  - component: {fileID: 1049431331}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -1033,7 +1033,7 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 1176945944}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &1049431329
+--- !u!114 &1049431331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,7 +1044,22 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41a2e208211aee1438a5bb5145392175, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::RTSCameraController
+  cameraTransform: {fileID: 963194228}
+  followTransform: {fileID: 0}
+  moveWithKeyboad: 1
+  moveWithEdgeScrolling: 1
+  moveWithMouseDrag: 1
+  normalSpeed: 0.05
+  movementSensitivity: 20
+  edgeSize: 50
+  cursorArrowUp: {fileID: 2800000, guid: e54ccd8b35b8c7b44b7c4b1bb2802452, type: 3}
+  cursorArrowDown: {fileID: 2800000, guid: 89a528898d0b3254386b3c77b20cd76d, type: 3}
+  cursorArrowLeft: {fileID: 2800000, guid: f432af4477345e64988aff0420639b32, type: 3}
+  cursorArrowRight: {fileID: 2800000, guid: 397fe46aca6bdef4ba1c2a61dd27230b, type: 3}
+  zoomSpeed: 5
+  minHeight: 20
+  maxHeight: 70
 --- !u!1 &1144981761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3339999
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1758,7 +1773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3339999
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3933939073416442796, guid: 9b603ec2aa62bdd46a3a432bd8ecb13f, type: 3}
       propertyPath: m_LocalPosition.z

@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class RTSCameraController : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
-    public static RTSCameraController instance;
+    public static CameraController instance;
 
     // If we want to select an item to follow, inside the item script add:
     // public void OnMouseDown(){
@@ -178,7 +178,7 @@ public class RTSCameraController : MonoBehaviour
             }
         }
 
-        // Smoothly move camera transform
+        // Smoothly move camera transform   
         target.position = Vector3.Lerp(target.position, newPosition, Time.deltaTime * movementSensitivity);
 
         Cursor.lockState = CursorLockMode.Confined; // If we have an extra monitor we don't want to exit screen bounds
